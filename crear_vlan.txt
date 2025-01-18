@@ -11,3 +11,5 @@ switchport mode access
 switchport access vlan 1
 ------------------------
 no vlan 1 //para eliminar una vlan
+----------------------
+show vlan id 1  // mostrar configuracion de la vlan1
