@@ -4,3 +4,4 @@ configure terminal
 vlan 5
 name finanzas
 no shutdown 
+copy running-config startup-config
