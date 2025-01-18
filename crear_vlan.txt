@@ -8,3 +8,4 @@ copy running-config startup-config
 --------------------------------
 interface ethernet 13
 switchport mode access 
+switchport access vlan 1
