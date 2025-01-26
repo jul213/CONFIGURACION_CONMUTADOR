@@ -7,6 +7,11 @@ default-information originate
 network 182.170.0.0
 no passive-interface default
 redistribute static metric 5
+
+interface hola
+ip rip authentication mode md5
+
+
 end // o exit
 
 ip rip database // para ver si esta configurado correctamente
