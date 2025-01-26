@@ -2,17 +2,17 @@
 enable
 configure terminal
 router rip
-version 2
-default-information originate
-network 182.170.0.0
-no passive-interface default
-redistribute static metric 5
-
+    version 2
+    default-information originate
+    network 182.170.0.0
+    no passive-interface default
+    redistribute static metric 5
+exit
 interface hola
 ip rip authentication mode md5
 ip rip authentication key-chain RIP-KEY
 
-end // o exit
+end
 
 ip rip database // para ver si esta configurado correctamente
 
