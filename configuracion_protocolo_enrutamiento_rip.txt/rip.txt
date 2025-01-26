@@ -3,4 +3,5 @@ enable
 configure terminal
 router rip
 version 2
+default-information originate
 
