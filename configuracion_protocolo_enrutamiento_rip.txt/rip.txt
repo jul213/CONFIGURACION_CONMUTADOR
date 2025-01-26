@@ -10,7 +10,7 @@ redistribute static metric 5
 
 interface hola
 ip rip authentication mode md5
-
+ip rip authentication key-chain RIP-KEY
 
 end // o exit
 
