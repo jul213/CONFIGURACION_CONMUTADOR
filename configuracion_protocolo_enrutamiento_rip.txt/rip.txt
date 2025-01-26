@@ -9,9 +9,13 @@ router rip
     redistribute static metric 5
 exit
 interface hola
-ip rip authentication mode md5
-ip rip authentication key-chain RIP-KEY
-
+    ip rip authentication mode md5
+    ip rip authentication key-chain RIP-KEY
+exit
+key chain RIP-KEY
+key 1
+key-string cifrado22
+exit
 end
 
 ip rip database // para ver si esta configurado correctamente
