@@ -2,4 +2,5 @@
 enable
 configure terminal
 router rip
-rip version 2
+version 2
+
