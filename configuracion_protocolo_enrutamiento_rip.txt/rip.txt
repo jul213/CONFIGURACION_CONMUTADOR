@@ -4,4 +4,6 @@ configure terminal
 router rip
 version 2
 default-information originate
+network 182.170.0.0
+no passive-interface default
 
