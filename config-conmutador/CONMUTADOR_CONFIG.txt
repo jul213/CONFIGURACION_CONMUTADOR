@@ -8,13 +8,17 @@ IP SSH VERSION 2
 LINE VTY 0 15
 TRANSPORT INPUT SSH
 LOGIN LOCAL
+exit
 -----------------
 USERNAME JUAN PRIVILEGE 15 SECRET JUAN2980*/          //CREAR USUSARIO PARA ACCEDER AL SSH
 EXIT
-COPY RUNNING-CONFIG STARTUP-CONFIG
 -----------------
 interface vlan 1
 ip address 192.168.0.20 255.255.255.0
 no shutdown
+exit
 --------------------------------------
 ip default-gateway 192.168.0.1 //generalmentte es la del router no la misma del switch
+
+end
+COPY RUNNING-CONFIG STARTUP-CONFIG
