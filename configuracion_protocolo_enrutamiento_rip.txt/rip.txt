@@ -18,5 +18,7 @@ key-string cifrado22
 exit
 end
 
-ip rip database // para ver si esta configurado correctamente
+show ip protocols // para ver si esta configurado correctamente
+show ip route rip
+showw running-config
 
