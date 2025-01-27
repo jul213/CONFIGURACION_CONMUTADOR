@@ -1,3 +1,4 @@
 ENABLE
 CONFIGURE TERMINAL
 router eigrp 2
+network 150.20.10.2 255.255.0.0
