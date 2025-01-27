@@ -1,7 +1,7 @@
 ENABLE
 CONFIGURE TERMINAL
 router eigrp 2
-network 150.20.10.2 255.255.0.0
+network 150.20.0.0 0.0.255.255
 passive interface default
 neighbor 150.0.0.0 interface interface1
 exit
