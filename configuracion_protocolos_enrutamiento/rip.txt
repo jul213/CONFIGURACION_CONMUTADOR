@@ -20,5 +20,5 @@ end
 
 show ip protocols // para ver si esta configurado correctamente
 show ip route rip
-showw running-config
+show running-config
 
