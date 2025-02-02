@@ -1,3 +1,7 @@
 enable 
 configure terminal 
 router ospf 109
+network 192.168.129.16 0.0.0.3 area 20
+exit
+configure terminal
+interface gigabitethernet 0/0
