@@ -1,6 +1,6 @@
 enable 
 configure terminal 
-router ospf 109
+router ospf 109 // numero de proceso
 network 192.168.129.16 0.0.0.3 area 20
 exit
 configure terminal
