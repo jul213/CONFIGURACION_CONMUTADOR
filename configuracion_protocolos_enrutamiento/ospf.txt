@@ -5,3 +5,4 @@ network 192.168.129.16 0.0.0.3 area 20
 exit
 configure terminal
 interface gigabitethernet 0/0
+ip ospf cost 65
