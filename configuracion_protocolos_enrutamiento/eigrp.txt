@@ -1,7 +1,7 @@
 ENABLE
 CONFIGURE TERMINAL
 router eigrp 2
-network 150.20.0.0 0.0.255.255
+network 150.20.0.0 0.0.255.255 // utiliza wildcards en vez de mascara de subred ya que te da algunas ventajas
 passive interface default
 no passive interface interface1
 neighbor 150.0.0.1 interface1
