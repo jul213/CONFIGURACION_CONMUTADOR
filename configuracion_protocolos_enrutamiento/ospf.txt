@@ -6,3 +6,5 @@ exit
 configure terminal
 interface gigabitethernet 0/0
 ip ospf cost 65
+exit
+show ip ospf 109
