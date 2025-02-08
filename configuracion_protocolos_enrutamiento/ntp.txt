@@ -9,4 +9,6 @@ enable
 configure t
 ntp server 192.168.5.8 prefer
 show clock
+show ntp status
+show ntp associations
 
