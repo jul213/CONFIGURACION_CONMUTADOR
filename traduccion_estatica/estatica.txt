@@ -1,13 +1,11 @@
 configure terminal
 ip nat inside source static 10.10.10.1 172.16.131.1
-interface ethernet 1
-ip address 10.114.10.20 255.255.255.0
+interface ethernet 1/0
+ip address 10.10.10.254 255.255.255.0
 ip nat inside
-exit
 
-configure terminal 
-ip nat outside source static 10.10.10.1 172.16.131.1
-interface ethernet 1
+ip nat outside source static 172.16.131.1 10.10.10.1
+interface ethernet 1/1
 ip address 10.114.10.20 255.255.255.0
 ip nat outside
 exit
