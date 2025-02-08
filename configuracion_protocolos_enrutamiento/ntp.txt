@@ -2,5 +2,6 @@
 enable
 config t
 ntp master 6  // nivel de estrato es de 1-15
-
+ntp source-interface ethernet 2/1
+end
 
