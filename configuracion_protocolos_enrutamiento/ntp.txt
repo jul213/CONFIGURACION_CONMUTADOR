@@ -12,3 +12,4 @@ show clock
 show ntp status
 show ntp associations
 
+//version 4 para ipv6
