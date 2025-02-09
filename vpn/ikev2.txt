@@ -23,7 +23,7 @@ crypto ikev2 keyring VPN-KEYS
 
 //perfil IKEv2
 crypto ikev2 profile VPN-PROFILE 
-    match identity remote address 10.20.4.100 255.0.0.0
+    match identity remote address 10.20.4.100 255.255.255.255
     authentication remote pre-share
     authentication local pre-share
     keyring local VPN-KEYS
@@ -41,7 +41,7 @@ ipsec-isakmp
     set peer 10.20.4.100
     set transform-set TS
     set ikev2-profile VPN-PROFILE 
-    match address VPN-TRAFIC
+    match address VPN-TRAFFIC
 
 interface ethernet0/0
-crypto map VPN-MAP
+    crypto map VPN-MAP
