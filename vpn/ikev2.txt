@@ -4,4 +4,10 @@ interface ethernet0/0
     nameif outside
     no shutdown
 
-
+//politica IKEv2
+crypto ikev2 policy 10
+    encryption aes-256
+    integrity sha256
+    group 20
+    prf sha256
+    lifetime seconds 86400 
