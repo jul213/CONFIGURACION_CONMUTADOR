@@ -42,4 +42,6 @@ ipsec-isakmp
     set transform-set TS
     set ikev2-profile VPN-PROFILE 
     match address VPN-TRAFIC
-    
+
+interface ethernet0/0
+crypto map VPN-MAP
