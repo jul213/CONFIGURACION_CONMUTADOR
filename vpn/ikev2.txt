@@ -26,4 +26,8 @@ crypto ikev2 profile VPN-PROFILE
     match identity remote address 10.20.4.100 255.0.0.0
     authentication remote pre-share
     authentication local pre-share
-    keyyring local VPN-KEYS
+    keyring local VPN-KEYS
+
+// configuracion de IPsec transform-set 
+crypto ipsec transform-set TS esp-aes 256 esp-sha-hmac
+
