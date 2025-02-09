@@ -20,5 +20,10 @@ crypto ikev2 keyring VPN-KEYS
     peer REMOTE-PEER 
      address 10.20.4.100
      pre-shared-key secreto22/*/22@
-     
 
+//perfil IKEv2
+crypto ikev2 profile VPN-PROFILE 
+    match identity remote address 10.20.4.100 255.0.0.0
+    authentication remote pre-share
+    authentication local pre-share
+    keyyring local VPN-KEYS
