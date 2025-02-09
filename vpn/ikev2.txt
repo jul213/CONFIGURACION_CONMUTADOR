@@ -11,3 +11,7 @@ crypto ikev2 policy 10
     group 20
     prf sha256
     lifetime seconds 86400 
+
+//habilitamos ikev2 en la interfaz externa
+crypto ikev2 enable outside
+
