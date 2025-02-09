@@ -15,3 +15,10 @@ crypto ikev2 policy 10
 //habilitamos ikev2 en la interfaz externa
 crypto ikev2 enable outside
 
+//configuracion de keyring para autenticacion
+crypto ikev2 keyring VPN-KEYS
+    peer REMOTE-PEER 
+     address 10.20.4.100
+     pre-shared-key secreto22/*/22@
+     
+
