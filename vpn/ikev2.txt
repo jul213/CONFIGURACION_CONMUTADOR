@@ -1,0 +1,7 @@
+
+interface ethernet0/0
+    ip address 10.10.4.100 255.255.255.0
+    nameif outside
+    no shutdown
+
+
