@@ -1,4 +1,5 @@
 configure terminal
-access-list 2 deny 198.4.5.0
-show access-lists 1
+access-list 2 deny 198.4.5.0 0.0.0.255
+exit
+show access-lists 2
 
