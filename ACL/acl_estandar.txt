@@ -1,5 +1,5 @@
 configure terminal
 ip access-list standard REFORZADO
-permit 10.108.0.0 0.0.0.0  // en caso de ser cualquier host de la red se especifica 0.0.0.0
+permit 10.108.0.0 0.0.255.255  // en caso de ser cualquier host de la red se especifica 0.0.0.0
 end
 copy running-config startup-config
