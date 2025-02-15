@@ -1,0 +1,4 @@
+configure terminal
+access-list 2 deny 198.4.5.0
+show access-lists 1
+
